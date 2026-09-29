@@ -1,130 +1,1669 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Supporting Every Student | Dyslexia & Mutism</title>
-<meta name="description" content="An educational resource about dyslexia and mutism for parents, teachers and educational support staff.">
+
+<title>Supporting Every Student | Speech & Language Disabilities</title>
+
+<meta name="description" content="An educational resource about Developmental Language Disorder and Speech Sound Disorder with lisping for families, teachers, and educational support staff.">
+
 <style>
-:root{--ink:#243447;--muted:#5d6b78;--bg:#f7f9fc;--card:#fff;--accent:#5b7cfa;--accent2:#7b61c9;--soft:#eaf0ff;--line:#e1e7ef}
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
-nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);padding:14px 5%}
-.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;color:var(--accent2);font-size:1.05rem}
-nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-weight:600;font-size:.92rem}nav a:hover{color:var(--accent)}
-.hero{padding:90px 5% 75px;background:linear-gradient(135deg,#eef3ff,#f8f1ff)}
-.hero-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
-.kicker{color:var(--accent2);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:.82rem}
-h1{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.05;margin:12px 0 20px} h2{font-size:2rem;margin-top:0} h3{margin-bottom:8px}
-.lead{font-size:1.2rem;color:var(--muted);max-width:720px}
-.btn{display:inline-block;margin-top:18px;background:var(--accent);color:white;text-decoration:none;padding:12px 19px;border-radius:10px;font-weight:700;margin-right:8px}.btn.alt{background:white;color:var(--accent);border:1px solid #cbd6ff}
-.illustration{background:white;border-radius:28px;padding:30px;box-shadow:0 18px 50px rgba(54,70,110,.12);text-align:center;font-size:5rem}
-section{max-width:1100px;margin:auto;padding:75px 5%}.center{text-align:center}.muted{color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.three{grid-template-columns:repeat(3,1fr)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 8px 24px rgba(30,45,70,.05)}
-.icon{font-size:2.2rem}.tag{display:inline-block;background:var(--soft);color:#435fd0;padding:5px 10px;border-radius:99px;font-size:.8rem;font-weight:700}
-ul{padding-left:21px}.callout{background:#eef7f5;border-left:5px solid #4ba58e;padding:20px;border-radius:10px;margin-top:25px}
-.note{background:#fff7e8;border-left:5px solid #e3a33a;padding:20px;border-radius:10px;margin-top:25px}
-footer{background:#243447;color:#eef3f8;padding:45px 5%;text-align:center}footer p{max-width:760px;margin:8px auto;color:#cbd5df}
-.small{font-size:.9rem;color:var(--muted)}
-@media(max-width:760px){.hero-inner,.grid,.three{grid-template-columns:1fr}.nav{align-items:flex-start}.nav-links{display:flex;flex-wrap:wrap;justify-content:flex-end}nav a{margin-left:10px}.hero{padding-top:60px}section{padding:55px 5%}}
+:root{
+--ink:#23354d;
+--muted:#5f6f82;
+--bg:#f7fafc;
+--card:#fff;
+--blue:#4f6fe8;
+--purple:#7658c9;
+--teal:#43a58e;
+--gold:#e3a33a;
+--rose:#d96b8a;
+--soft-blue:#edf2ff;
+--soft-purple:#f3efff;
+--soft-teal:#eaf7f3;
+--soft-gold:#fff6e5;
+--soft-rose:#fff0f4;
+--line:#dfe6ef
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+color:var(--ink);
+background:var(--bg);
+line-height:1.65
+}
+
+nav{
+position:sticky;
+top:0;
+z-index:20;
+background:rgba(255,255,255,.97);
+border-bottom:1px solid var(--line);
+padding:13px 5%;
+backdrop-filter:blur(8px)
+}
+
+.nav{
+max-width:1150px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:20px
+}
+
+.brand{
+font-weight:800;
+color:var(--purple);
+font-size:1.05rem;
+white-space:nowrap
+}
+
+nav a{
+color:var(--ink);
+text-decoration:none;
+margin-left:15px;
+font-weight:700;
+font-size:.88rem
+}
+
+nav a:hover{color:var(--blue)}
+
+.hero{
+padding:88px 5% 78px;
+background:linear-gradient(135deg,#edf3ff 0%,#f7f0ff 55%,#eefaf7 100%)
+}
+
+.hero-inner{
+max-width:1150px;
+margin:auto;
+display:grid;
+grid-template-columns:1.18fr .82fr;
+gap:50px;
+align-items:center
+}
+
+.kicker{
+color:var(--purple);
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:1.5px;
+font-size:.8rem
+}
+
+h1{
+font-size:clamp(2.5rem,6vw,4.8rem);
+line-height:1.03;
+margin:12px 0 20px
+}
+
+h2{
+font-size:2rem;
+line-height:1.15;
+margin:0 0 10px
+}
+
+h3{margin:0 0 9px}
+
+.lead{
+font-size:1.16rem;
+color:var(--muted);
+max-width:760px
+}
+
+.btn{
+display:inline-block;
+margin-top:18px;
+background:var(--blue);
+color:#fff;
+text-decoration:none;
+padding:12px 19px;
+border-radius:11px;
+font-weight:800;
+margin-right:8px
+}
+
+.btn.alt{
+background:#fff;
+color:var(--blue);
+border:1px solid #cbd6ff
+}
+
+.hero-art{
+background:#fff;
+border-radius:30px;
+padding:35px;
+box-shadow:0 18px 55px rgba(54,70,110,.12);
+text-align:center
+}
+
+.hero-art .big{font-size:5rem}
+.hero-art .small{font-size:2rem}
+
+section{
+max-width:1150px;
+margin:auto;
+padding:78px 5%
+}
+
+.center{text-align:center}
+
+.muted{color:var(--muted)}
+
+.tag{
+display:inline-block;
+background:var(--soft-blue);
+color:#435fd0;
+padding:5px 11px;
+border-radius:99px;
+font-size:.8rem;
+font-weight:800;
+text-transform:uppercase;
+letter-spacing:.5px
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px
+}
+
+.three{
+grid-template-columns:repeat(3,1fr)
+}
+
+.card{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:19px;
+padding:25px;
+box-shadow:0 8px 24px rgba(30,45,70,.05)
+}
+
+.topic-card{
+transition:transform .2s ease,box-shadow .2s ease
+}
+
+.topic-card:hover{
+transform:translateY(-3px);
+box-shadow:0 14px 30px rgba(30,45,70,.09)
+}
+
+.icon{font-size:2.35rem}
+
+.pill{
+display:inline-block;
+padding:5px 10px;
+border-radius:99px;
+font-size:.78rem;
+font-weight:800;
+background:var(--soft-purple);
+color:#6248ad
+}
+
+.callout{
+background:var(--soft-teal);
+border-left:5px solid var(--teal);
+padding:20px;
+border-radius:11px;
+margin-top:25px
+}
+
+.note{
+background:var(--soft-gold);
+border-left:5px solid var(--gold);
+padding:20px;
+border-radius:11px;
+margin-top:25px
+}
+
+.warning{
+background:var(--soft-rose);
+border-left:5px solid var(--rose);
+padding:20px;
+border-radius:11px;
+margin-top:25px
+}
+
+.list-card ul{margin-bottom:0}
+
+.support{border-top:5px solid var(--blue)}
+.dld{border-top:5px solid var(--purple)}
+.ssd{border-top:5px solid var(--teal)}
+.parent{border-top:5px solid var(--rose)}
+.educator{border-top:5px solid var(--gold)}
+
+.resource{
+border-top:5px solid var(--teal);
+background:#fff
+}
+
+.resource-dld{
+border-top:5px solid var(--purple);
+background:#fff
+}
+
+.resource a{
+color:#365bcf;
+font-weight:700;
+text-decoration:none
+}
+
+.resource a:hover{
+text-decoration:underline
+}
+
+.resource-list{
+padding-left:20px;
+margin-bottom:0
+}
+
+.resource-list li{
+margin-bottom:13px
+}
+
+.fact{
+font-size:2.1rem;
+font-weight:900;
+color:var(--purple);
+line-height:1;
+margin:8px 0
+}
+
+.small-text{
+font-size:.9rem;
+color:var(--muted)
+}
+
+.strategy-grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:13px;
+margin-top:25px
+}
+
+.strategy{
+background:#fff;
+border:1px solid var(--line);
+border-radius:15px;
+padding:17px;
+text-align:center
+}
+
+.strategy b{
+display:block;
+margin-bottom:5px
+}
+
+.reference{
+padding:18px 20px;
+margin-top:12px;
+background:#fff;
+border:1px solid var(--line);
+border-radius:14px
+}
+
+.reference a{
+color:#365bcf;
+word-break:break-word
+}
+
+.two-col{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:28px
+}
+
+.anchor-links{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
+margin:25px 0
+}
+
+.anchor-links a{
+color:var(--ink);
+background:#fff;
+border:1px solid var(--line);
+border-radius:99px;
+padding:8px 14px;
+text-decoration:none;
+font-weight:700;
+font-size:.9rem
+}
+
+footer{
+background:#23354d;
+color:#eef3f8;
+padding:45px 5%;
+text-align:center
+}
+
+footer p{
+max-width:800px;
+margin:8px auto;
+color:#cbd5df
+}
+
+.footer-small{
+font-size:.85rem;
+color:#aebdca
+}
+
+@media(max-width:900px){
+.hero-inner,
+.grid,
+.three,
+.two-col{
+grid-template-columns:1fr
+}
+
+.strategy-grid{
+grid-template-columns:repeat(2,1fr)
+}
+}
+
+@media(max-width:700px){
+.nav{
+align-items:flex-start
+}
+
+.nav-links{
+display:flex;
+flex-wrap:wrap;
+justify-content:flex-end;
+gap:4px
+}
+
+nav a{
+margin-left:7px
+}
+
+.hero{
+padding-top:60px
+}
+
+section{
+padding:58px 5%
+}
+
+.strategy-grid{
+grid-template-columns:1fr
+}
+
+.hero-art .big{
+font-size:4rem
+}
+}
 </style>
 </head>
+
 <body>
+
 <nav>
-  <div class="nav">
-    <div class="brand">Supporting Every Student</div>
-    <div class="nav-links">
-      <a href="#home">Home</a><a href="#dyslexia">Dyslexia</a><a href="#mutism">Mutism</a><a href="#parents">Parents</a><a href="#educators">Educators</a><a href="#resources">Resources</a>
-    </div>
-  </div>
+<div class="nav">
+
+<div class="brand">
+Supporting Every Student
+</div>
+
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#dld">DLD</a>
+<a href="#ssd">Speech Sound</a>
+<a href="#educators">Educators</a>
+<a href="#families">Families</a>
+<a href="#resources">Resources</a>
+<a href="#references">References</a>
+</div>
+
+</div>
 </nav>
 
+
 <header class="hero" id="home">
+
 <div class="hero-inner">
+
 <div>
-<div class="kicker">Educational Support • NBCC Student Project</div>
-<h1>Understanding. Supporting. Including.</h1>
-<p class="lead">A simple educational resource about <strong>dyslexia and mutism</strong>, created to help parents, teachers, and educational support staff better understand and support students.</p>
-<a class="btn" href="#dyslexia">Explore the topics</a>
-<a class="btn alt" href="#about">About this project</a>
+
+<div class="kicker">
+Educational Support • NBCC Student Project
 </div>
-<div class="illustration">📚<br><span style="font-size:2.5rem">💬 🧩 ❤️</span></div>
+
+<h1>
+Understanding.<br>
+Supporting.<br>
+Including.
+</h1>
+
+<p class="lead">
+A simple educational resource about two speech and language disabilities that can affect children's communication and participation at school.
+</p>
+
+<a class="btn" href="#dld">
+Explore DLD
+</a>
+
+<a class="btn alt" href="#ssd">
+Explore Speech Sound Disorder
+</a>
+
 </div>
+
+<div class="hero-art">
+
+<div class="big">
+💬 🗣️
+</div>
+
+<div class="small">
+📚 ❤️ 🤝
+</div>
+
+<p class="muted">
+<strong>Every student communicates differently.</strong>
+<br>
+Support should be respectful, individualized, and inclusive.
+</p>
+
+</div>
+
+</div>
+
 </header>
 
+
 <section id="about">
+
 <div class="center">
-<span class="tag">About the project</span>
-<h2>A resource built around understanding</h2>
-<p class="lead" style="margin:auto">My name is <strong>Houda</strong>, and I am a student in the <strong>Educational Support Program at NBCC</strong>. I created this website as an educational project to share clear, accessible information about dyslexia and mutism.</p>
+
+<span class="tag">
+About the project
+</span>
+
+<h2>
+A resource built around understanding
+</h2>
+
+<p class="lead" style="margin:auto">
+
+My name is <strong>Houda</strong>, and I am a student in the
+<strong>Educational Support Program at NBCC</strong>.
+
+I created this website to share clear, accessible information that can help families, teachers, and educational support staff understand communication differences and support students in the classroom.
+
+</p>
+
 </div>
+
+
 <div class="grid" style="margin-top:30px">
-<div class="card"><h3>🌱 The purpose</h3><p>Students learn and communicate in different ways. Understanding their experiences can help adults respond with patience, respect, and appropriate support.</p></div>
-<div class="card"><h3>🤝 Who can use it?</h3><p>Parents, teachers, educational assistants, support staff, and anyone who wants to learn more about supporting students.</p></div>
+
+<div class="card">
+
+<h3>🌱 Purpose</h3>
+
+<p>
+Students learn and communicate in different ways.
+Understanding communication needs can help adults respond with patience, respect, and appropriate support.
+</p>
+
 </div>
-<div class="callout"><strong>My goal:</strong> to focus on the student as a whole person—not simply on a diagnosis or label—and to encourage individualized, inclusive support.</div>
+
+
+<div class="card">
+
+<h3>🤝 Who is this for?</h3>
+
+<p>
+Parents, teachers, educational assistants, educational support staff, and anyone who wants to learn more about supporting students.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="callout">
+
+<strong>Inclusive approach:</strong>
+A communication difficulty does not define a student's intelligence, personality, or potential.
+Supports should be based on the individual student's needs, strengths, and goals.
+
+</div>
+
 </section>
 
-<section id="dyslexia">
-<div class="center"><span class="tag">Topic 01</span><h2>📖 Dyslexia</h2><p class="muted">Understanding reading and language-based learning differences.</p></div>
-<div class="grid">
-<div class="card"><h3>What is dyslexia?</h3><p>Dyslexia is a specific learning disorder that primarily affects reading and spelling skills. It is not a reflection of a person's intelligence. Students with dyslexia may need explicit, systematic and appropriately paced instruction.</p></div>
-<div class="card"><h3>What might we notice?</h3><ul><li>Difficulty with accurate or fluent word reading</li><li>Difficulty connecting letters and sounds</li><li>Spelling challenges</li><li>Difficulty reading unfamiliar words</li><li>Fatigue or frustration during reading tasks</li></ul></div>
+
+
+<!-- DLD -->
+
+<section id="dld" style="background:#fbf9ff">
+
+<div class="center">
+
+<span class="tag">
+Topic 01 • Language
+</span>
+
+<h2>
+💬 Developmental Language Disorder (DLD)
+</h2>
+
+<p class="muted">
+Understanding &amp; Using Language
+</p>
+
 </div>
+
+
+<div class="grid" style="margin-top:30px">
+
+<div class="card dld">
+
+<h3>
+What is DLD?
+</h3>
+
+<p>
+Developmental Language Disorder is a condition involving persistent difficulties with language that can affect everyday communication and/or learning.
+Difficulties can involve understanding language, expressing ideas, vocabulary, sentence structure, or using language in different situations.
+</p>
+
+<p class="small-text">
+DLD is identified through professional assessment.
+Classroom observations alone do not diagnose DLD.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🇨🇦 Canadian context
+</h3>
+
+<div class="fact">
+7.1%
+</div>
+
+<p>
+A Canadian estimate frequently cited in professional and university resources is approximately 7.1% of children having Developmental Language Disorder.
+</p>
+
+<p class="small-text">
+Prevalence estimates can vary depending on the population, age group, diagnostic criteria, and methodology used.
+</p>
+
+</div>
+
+</div>
+
+
 <div class="grid" style="margin-top:22px">
-<div class="card"><h3>🏫 Helpful classroom supports</h3><ul><li>Give clear, step-by-step instructions.</li><li>Use explicit instruction in sound-letter relationships.</li><li>Allow appropriate extra time when needed.</li><li>Provide accessible text or text-to-speech when appropriate.</li><li>Check understanding without putting the student on the spot.</li></ul></div>
-<div class="card"><h3>💛 Support the learner</h3><p>Recognize effort and progress. Avoid assuming that reading difficulty means low ability. Provide opportunities for students to demonstrate knowledge in more than one way.</p></div>
-</div>
-<div class="note"><strong>Important:</strong> Classroom observations do not diagnose dyslexia. Identification and diagnosis should involve qualified professionals and appropriate assessment.</div>
-</section>
 
-<section id="mutism">
-<div class="center"><span class="tag">Topic 02</span><h2>💬 Mutism</h2><p class="muted">Understanding when speaking or verbal communication is difficult or absent.</p></div>
-<div class="grid">
-<div class="card"><h3>What does mutism mean?</h3><p>Mutism can describe a situation in which a person does not speak. <strong>Selective mutism</strong> is a specific condition in which a child consistently cannot speak in particular social situations despite speaking in other situations. It is important not to assume that silence is simply a choice or defiance.</p></div>
-<div class="card"><h3>What might we notice?</h3><ul><li>Speaking comfortably in some settings but not others</li><li>Using gestures, writing, pointing, or facial expressions instead of speech</li><li>Difficulty answering questions aloud</li><li>Visible anxiety around speaking situations</li><li>Communication that changes depending on the environment</li></ul></div>
+<div class="card list-card">
+
+<h3>
+🔍 Possible characteristics
+</h3>
+
+<ul>
+
+<li>Difficulty finding the right words</li>
+
+<li>Difficulty understanding complex language or instructions</li>
+
+<li>Limited or slower vocabulary development</li>
+
+<li>Difficulty forming or understanding sentences</li>
+
+<li>Difficulty explaining or organizing ideas</li>
+
+<li>Difficulty remembering or processing verbal information</li>
+
+</ul>
+
 </div>
+
+
+<div class="card list-card">
+
+<h3>
+🚧 Possible classroom barriers
+</h3>
+
+<ul>
+
+<li>Long or multi-step instructions</li>
+
+<li>Fast-paced classroom discussions</li>
+
+<li>New or unfamiliar vocabulary</li>
+
+<li>Explaining answers verbally</li>
+
+<li>Group work that depends heavily on language</li>
+
+<li>Understanding figurative or complex language</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
 <div class="grid" style="margin-top:22px">
-<div class="card"><h3>🏫 Helpful classroom supports</h3><ul><li>Do not force the student to speak.</li><li>Accept non-verbal communication.</li><li>Reduce unnecessary pressure and public attention.</li><li>Build predictable, trusting routines.</li><li>Offer gradual opportunities for communication with appropriate professional guidance.</li></ul></div>
-<div class="card"><h3>💛 Build safety and trust</h3><p>Give the student time. Treat communication attempts as meaningful, whether they are spoken or non-verbal. Coordinate support with families and qualified professionals when needed.</p></div>
+
+<div class="card">
+
+<h3>
+💪 Possible strengths
+</h3>
+
+<p>
+Students with DLD have individual strengths that may appear in areas such as visual learning, creativity, practical activities, problem-solving, interests, or non-language-based tasks.
+</p>
+
+<p class="small-text">
+<strong>Remember:</strong> strengths vary from student to student.
+</p>
+
 </div>
-<div class="note"><strong>Important:</strong> A quiet student is not automatically experiencing selective mutism. Assessment requires consideration of the student's communication across settings and input from appropriate professionals.</div>
+
+
+<div class="card support">
+
+<h3>
+👩‍🏫 Classroom support
+</h3>
+
+<ul>
+
+<li>Use short, clear instructions.</li>
+
+<li>Break instructions into smaller steps.</li>
+
+<li>Use pictures, gestures, diagrams, and written keywords.</li>
+
+<li>Pre-teach important vocabulary.</li>
+
+<li>Allow extra processing time.</li>
+
+<li>Check understanding in a supportive way.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- NEW DLD RESOURCES -->
+
+<div class="card resource-dld" style="margin-top:30px">
+
+<h3>
+🤝 Support &amp; Resources for DLD
+</h3>
+
+<p>
+Families and educators can use Canadian resources to learn more about DLD and find professional support.
+</p>
+
+<ul class="resource-list">
+
+<li>
+
+<strong>Speech-Language &amp; Audiology Canada (SAC)</strong><br>
+
+A Canadian professional organization with resources about childhood language disorders, including DLD.
+
+<br>
+
+<a href="https://www.sac-oac.ca/wp-content/uploads/2023/02/sac_childhood_language_disorder_resource_page_en.pdf"
+target="_blank"
+rel="noopener">
+Read the SAC Childhood Language Disorder Resource
+</a>
+
+</li>
+
+
+<li>
+
+<strong>SAC – Find a Professional</strong><br>
+
+Families can use SAC's Canadian directory to search for a Speech-Language Pathologist or Audiologist by province or territory.
+
+<br>
+
+<a href="https://www.sac-oac.ca/for-the-public/"
+target="_blank"
+rel="noopener">
+Find a Speech-Language Pathologist in Canada
+</a>
+
+</li>
+
+
+<li>
+
+<strong>SAC – Speech-Language Pathologists in Schools</strong><br>
+
+Information about the role of S-LPs in school settings and collaboration with teachers, educational assistants, and other members of school teams.
+
+<br>
+
+<a href="https://www.sac-oac.ca/practice-resources/toolkits/speech-language-pathologists-in-schools/"
+target="_blank"
+rel="noopener">
+SAC School-Based Resources
+</a>
+
+</li>
+
+
+<li>
+
+<strong>New Brunswick Association of Speech-Language Pathologists and Audiologists (NBASLPA)</strong><br>
+
+For school-age children in New Brunswick, school-based S-LPs provide services to students with language disorders and speech sound disorders.
+
+<br>
+
+<a href="https://nbaslpa.ca/wp-content/uploads/2021/04/Access-to-Audio-and-SLP-Services-in-NB.pdf"
+target="_blank"
+rel="noopener">
+Access to Speech-Language Services in New Brunswick
+</a>
+
+</li>
+
+</ul>
+
+<div class="callout">
+
+<strong>For families:</strong>
+If you have concerns about a child's communication or language development, speak with the child's teacher, school support team, or a qualified Speech-Language Pathologist.
+
+</div>
+
+</div>
+
+
+<div class="callout">
+
+<strong>Why it matters:</strong>
+Canadian research has examined how school-based speech-language pathologists and educational psychologists identify childhood developmental language disorders.
+Consistent terminology and appropriate assessment can support communication between professionals and families.
+
+</div>
+
 </section>
 
-<section id="parents">
-<div class="center"><span class="tag">For families</span><h2>👨‍👩‍👧 For Parents</h2><p class="muted">Small changes in understanding can make a big difference.</p></div>
-<div class="grid three">
-<div class="card"><h3>Listen</h3><p>Ask your child what helps them learn or communicate comfortably. Give them time to respond.</p></div>
-<div class="card"><h3>Collaborate</h3><p>Share observations with teachers and support staff. Consistent communication can help adults work toward common goals.</p></div>
-<div class="card"><h3>Celebrate progress</h3><p>Focus on strengths, effort, growth, and participation—not only on difficulties.</p></div>
+
+
+<!-- SPEECH SOUND DISORDER -->
+
+<section id="ssd">
+
+<div class="center">
+
+<span class="tag">
+Topic 02 • Speech
+</span>
+
+<h2>
+🗣️ Speech Sound Disorder (SSD) – Lisping
+</h2>
+
+<p class="muted">
+Speech Sounds &amp; Pronunciation
+</p>
+
 </div>
+
+
+<div class="grid" style="margin-top:30px">
+
+<div class="card ssd">
+
+<h3>
+What is a Speech Sound Disorder?
+</h3>
+
+<p>
+A Speech Sound Disorder affects a child's ability to produce speech sounds accurately or clearly.
+Speech sound difficulties can involve sound substitutions, omissions, additions, or distortions and may affect how easily a child is understood.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+👄 What is lisping?
+</h3>
+
+<p>
+
+<strong>Lisping</strong> is a speech sound difficulty in which some sounds may be produced differently from the expected speech pattern.
+The /s/ and /z/ sounds are commonly discussed when describing lisping.
+
+</p>
+
+<p class="small-text">
+Lisping is best presented as an example of a speech sound difficulty rather than as a separate broad diagnostic category.
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="grid" style="margin-top:22px">
+
+<div class="card">
+
+<h3>
+🇨🇦 Canadian research
+</h3>
+
+<p>
+Recent Canadian research has examined speech sound disorders in children, including how SSD can be assessed in multilingual children and how speech production involves coordinated movements of the jaw, lips, and tongue.
+</p>
+
+<p class="small-text">
+
+<strong>Important:</strong>
+A recent national Canadian prevalence estimate specifically for lisping was not identified in the sources reviewed.
+
+</p>
+
+</div>
+
+
+<div class="card list-card">
+
+<h3>
+🔍 Possible characteristics
+</h3>
+
+<ul>
+
+<li>Difficulty producing certain speech sounds</li>
+
+<li>Sound substitutions or distortions</li>
+
+<li>Speech that may be harder for unfamiliar listeners to understand</li>
+
+<li>Difficulty with specific sounds such as /s/ or /z/ in some cases</li>
+
+<li>Possible frustration during communication</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="grid" style="margin-top:22px">
+
+<div class="card list-card">
+
+<h3>
+🚧 Possible classroom barriers
+</h3>
+
+<ul>
+
+<li>Reading aloud</li>
+
+<li>Oral presentations</li>
+
+<li>Speaking in large groups</li>
+
+<li>Being misunderstood by peers or adults</li>
+
+<li>Feeling pressure to repeat speech</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+💪 Possible strengths
+</h3>
+
+<p>
+A speech sound difficulty does not determine a student's intelligence or academic potential.
+Students may have strong abilities in written communication, creativity, visual learning, problem-solving, or other areas.
+</p>
+
+<p class="small-text">
+<strong>Strengths vary from student to student.</strong>
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card support" style="margin-top:22px">
+
+<h3>
+👩‍🏫 Classroom strategies
+</h3>
+
+<div class="strategy-grid">
+
+<div class="strategy">
+<b>👂 Listen</b>
+<span class="small-text">
+Focus on the student's message.
+</span>
+</div>
+
+<div class="strategy">
+<b>⏳ Wait</b>
+<span class="small-text">
+Give enough time to finish speaking.
+</span>
+</div>
+
+<div class="strategy">
+<b>❤️ Encourage</b>
+<span class="small-text">
+Create a safe communication environment.
+</span>
+</div>
+
+<div class="strategy">
+<b>📝 Offer options</b>
+<span class="small-text">
+Use written or alternative ways to participate when appropriate.
+</span>
+</div>
+
+<div class="strategy">
+<b>🙅 Don't pressure</b>
+<span class="small-text">
+Avoid unnecessary repeated requests to speak again.
+</span>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- NEW SPEECH SOUND RESOURCES -->
+
+<div class="card resource" style="margin-top:30px">
+
+<h3>
+🤝 Support &amp; Resources for Speech Sound Disorder / Lisping
+</h3>
+
+<p>
+Parents, students, and educators can use Canadian resources to learn about speech sound difficulties and find professional support.
+</p>
+
+<ul class="resource-list">
+
+<li>
+
+<strong>Speech-Language &amp; Audiology Canada (SAC)</strong><br>
+
+SAC provides Canadian information and professional resources related to speech and communication disorders.
+
+<br>
+
+<a href="https://www.sac-oac.ca/practice-resources/resource-library/"
+target="_blank"
+rel="noopener">
+Explore the SAC Resource Library
+</a>
+
+</li>
+
+
+<li>
+
+<strong>SAC – Find a Professional</strong><br>
+
+Families can search for a Speech-Language Pathologist in their Canadian province or territory.
+
+<br>
+
+<a href="https://www.sac-oac.ca/for-the-public/"
+target="_blank"
+rel="noopener">
+Find a Speech-Language Pathologist
+</a>
+
+</li>
+
+
+<li>
+
+<strong>SAC – Speech-Language Pathologists in Schools</strong><br>
+
+This Canadian toolkit provides information about S-LPs working with school teams, including teachers and educational assistants.
+
+<br>
+
+<a href="https://www.sac-oac.ca/practice-resources/toolkits/speech-language-pathologists-in-schools/"
+target="_blank"
+rel="noopener">
+SAC School Resources
+</a>
+
+</li>
+
+
+<li>
+
+<strong>New Brunswick Association of Speech-Language Pathologists and Audiologists (NBASLPA)</strong><br>
+
+In New Brunswick, school-based S-LPs provide services to school-age children with speech sound and language disorders.
+
+<br>
+
+<a href="https://nbaslpa.ca/wp-content/uploads/2021/04/Access-to-Audio-and-SLP-Services-in-NB.pdf"
+target="_blank"
+rel="noopener">
+Access Speech-Language Services in New Brunswick
+</a>
+
+</li>
+
+</ul>
+
+
+<div class="callout">
+
+<strong>For New Brunswick families:</strong>
+For a school-age child, NBASLPA recommends contacting the child's classroom teacher or the Resource Department at the school to ask about speech-language pathology services.
+
+</div>
+
+</div>
+
+
+<div class="note">
+
+<strong>Multilingual learners:</strong>
+Speaking more than one language does not automatically mean a child has a speech sound disorder.
+Assessment should consider the child's languages and cultural and linguistic background.
+
+</div>
+
 </section>
 
-<section id="educators">
-<div class="center"><span class="tag">For schools</span><h2>👩‍🏫 For Teachers & Educational Support Staff</h2><p class="muted">Practical principles for an inclusive environment.</p></div>
-<div class="grid three">
-<div class="card"><h3>Observe</h3><p>Look for patterns across activities, people, and environments rather than making assumptions from one moment.</p></div>
-<div class="card"><h3>Adapt</h3><p>Use appropriate accommodations and multiple ways for students to access information and demonstrate learning.</p></div>
-<div class="card"><h3>Collaborate</h3><p>Work with families, school teams, and qualified professionals when a student needs additional support.</p></div>
+
+
+<!-- EDUCATORS -->
+
+<section id="educators" style="background:#f8fbff">
+
+<div class="center">
+
+<span class="tag">
+For educators &amp; educational support staff
+</span>
+
+<h2>
+👩‍🏫 Inclusive Communication in the Classroom
+</h2>
+
+<p class="lead" style="margin:auto">
+Small changes can make communication more accessible without lowering expectations.
+</p>
+
 </div>
-<div class="callout"><strong>Inclusive mindset:</strong> Ask “What support would help this student participate?” rather than “Why can't this student do it the usual way?”</div>
+
+
+<div class="three grid" style="margin-top:30px">
+
+<div class="card educator">
+
+<h3>
+1. Make language visible
+</h3>
+
+<p>
+Use visuals, written keywords, examples, gestures, and clear routines to support spoken information.
+</p>
+
+</div>
+
+
+<div class="card educator">
+
+<h3>
+2. Give processing time
+</h3>
+
+<p>
+Pause after asking a question and allow the student enough time to understand, plan, and respond.
+</p>
+
+</div>
+
+
+<div class="card educator">
+
+<h3>
+3. Offer ways to participate
+</h3>
+
+<p>
+When appropriate, allow written responses, visual supports, partner work, or smaller-group participation.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="three grid" style="margin-top:22px">
+
+<div class="card">
+
+<h3>
+4. Protect dignity
+</h3>
+
+<p>
+Do not draw unnecessary attention to speech or language differences.
+Avoid teasing, imitation, or public correction.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+5. Focus on communication
+</h3>
+
+<p>
+Listen to what the student is trying to communicate rather than focusing only on errors.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+6. Work as a team
+</h3>
+
+<p>
+When concerns persist, communicate with families and the appropriate school or speech-language professionals.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="callout">
+
+<strong>People-first approach:</strong>
+A student is a whole person first.
+Use respectful language and individualized supports rather than defining a student only by a diagnosis or communication difficulty.
+
+</div>
+
 </section>
 
-<section id="resources">
-<div class="center"><span class="tag">Learn more</span><h2>📚 Resources</h2><p class="muted">Use reliable sources for deeper information and professional guidance.</p></div>
-<div class="grid">
-<div class="card"><h3>International Dyslexia Association</h3><p>Information and resources about dyslexia and structured literacy.</p><a class="btn" href="https://dyslexiaida.org/" target="_blank" rel="noopener">Visit IDA</a></div>
-<div class="card"><h3>Canadian resources</h3><p>Look for information from Canadian health, education, and professional organizations, and verify that resources are current.</p></div>
-<div class="card"><h3>Selective Mutism Association</h3><p>Resources for families and professionals seeking information about selective mutism.</p><a class="btn" href="https://www.selectivemutism.org/" target="_blank" rel="noopener">Visit SMA</a></div>
-<div class="card"><h3>Professional support</h3><p>When concerns are significant, families can discuss them with qualified professionals such as educators, physicians, psychologists, speech-language pathologists, or other appropriate specialists.</p></div>
+
+
+<!-- FAMILIES -->
+
+<section id="families">
+
+<div class="center">
+
+<span class="tag">
+For families
+</span>
+
+<h2>
+👨‍👩‍👧 Supporting Communication at Home
+</h2>
+
+<p class="lead" style="margin:auto">
+Families can support communication through everyday interactions, encouragement, and collaboration with professionals.
+</p>
+
 </div>
-<div class="note"><strong>Educational disclaimer:</strong> This website is an educational student project. It is not a substitute for diagnosis, medical advice, psychological assessment, or individualized professional recommendations.</div>
+
+
+<div class="two-col" style="margin-top:30px">
+
+<div class="card parent">
+
+<h3>
+💬 For children with DLD
+</h3>
+
+<ul>
+
+<li>Talk about everyday activities.</li>
+
+<li>Read and discuss books together.</li>
+
+<li>Introduce new words in meaningful contexts.</li>
+
+<li>Give your child time to answer.</li>
+
+<li>Break complicated instructions into smaller steps.</li>
+
+<li>Share concerns with the school and speech-language professional when appropriate.</li>
+
+</ul>
+
+</div>
+
+
+<div class="card parent">
+
+<h3>
+🗣️ For speech sound difficulties
+</h3>
+
+<ul>
+
+<li>Listen patiently and avoid interrupting.</li>
+
+<li>Show interest in what your child is saying.</li>
+
+<li>Avoid teasing or making fun of speech errors.</li>
+
+<li>Encourage communication rather than focusing only on pronunciation.</li>
+
+<li>Ask a speech-language pathologist for guidance when concerns persist.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="warning">
+
+<strong>Remember:</strong>
+This website provides general educational information.
+It is not a diagnostic tool and does not replace assessment or advice from a qualified speech-language pathologist or other appropriate professional.
+
+</div>
+
 </section>
+
+
+
+<!-- RESOURCES OVERVIEW -->
+
+<section id="resources" style="background:#f8fbff">
+
+<div class="center">
+
+<span class="tag">
+Canadian Resources
+</span>
+
+<h2>
+🔗 Where Families Can Find Help
+</h2>
+
+<p class="lead" style="margin:auto">
+These Canadian organizations and resources can help families and educators learn more and locate professional support.
+</p>
+
+</div>
+
+
+<div class="grid" style="margin-top:30px">
+
+<div class="card resource-dld">
+
+<h3>
+🇨🇦 Speech-Language &amp; Audiology Canada
+</h3>
+
+<p>
+SAC is a national Canadian organization representing speech-language pathology and audiology professionals.
+Its public resources include information about children's communication and a directory for finding professionals.
+</p>
+
+<a href="https://www.sac-oac.ca/for-the-public/"
+target="_blank"
+rel="noopener">
+Visit SAC – For the Public →
+</a>
+
+</div>
+
+
+<div class="card resource">
+
+<h3>
+🍁 New Brunswick – NBASLPA
+</h3>
+
+<p>
+NBASLPA provides information about speech-language pathology and audiology services in New Brunswick, including information for school-age children.
+</p>
+
+<a href="https://nbaslpa.ca/"
+target="_blank"
+rel="noopener">
+Visit NBASLPA →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="callout">
+
+<strong>School support:</strong>
+In New Brunswick, families can contact their child's classroom teacher or the school's Resource Department to ask about school-based speech-language pathology services.
+
+</div>
+
+</section>
+
+
+
+<!-- REFERENCES -->
+
+<section id="references" style="background:#fbfcfe">
+
+<div class="center">
+
+<span class="tag">
+Sources
+</span>
+
+<h2>
+📚 References
+</h2>
+
+<p class="muted">
+Recent Canadian sources and research used for this educational project.
+</p>
+
+</div>
+
+
+<div class="reference">
+
+<strong>
+Archibald, L. M. D., &amp; Kuyvenhoven, C. (2024).
+</strong>
+
+Exploring the views, perspectives, and current practices of educational speech-language pathologists and psychologists in Canada: How childhood developmental language disorders are identified and diagnosed.
+
+<em>
+American Journal of Speech-Language Pathology, 33
+</em>
+(3), 1443–1455.
+
+<br>
+
+<a href="https://doi.org/10.1044/2024_AJSLP-23-00170"
+target="_blank"
+rel="noopener">
+
+https://doi.org/10.1044/2024_AJSLP-23-00170
+
+</a>
+
+</div>
+
+
+<div class="reference">
+
+<strong>
+Kuiack, A. K., &amp; Archibald, L. M. D. (2024).
+</strong>
+
+Identifying and describing developmental language disorder in children.
+
+<em>
+International Journal of Language &amp; Communication Disorders, 59
+</em>
+(3), 1180–1193.
+
+<br>
+
+<a href="https://doi.org/10.1111/1460-6984.12984"
+target="_blank"
+rel="noopener">
+
+https://doi.org/10.1111/1460-6984.12984
+
+</a>
+
+</div>
+
+
+<div class="reference">
+
+<strong>
+University of Ottawa. (2024, October 17).
+</strong>
+
+<em>
+Optimizing care for children with language disorders.
+</em>
+
+<br>
+
+<a href="https://www.uottawa.ca/research-innovation/news-all/optimizing-care-children-language-disorders"
+target="_blank"
+rel="noopener">
+
+University of Ottawa
+
+</a>
+
+</div>
+
+
+<div class="reference">
+
+<strong>
+Washington, K. N., Crowe, K., McLeod, S., Margetson, K., Bazzocchi, N. B. M., Kokotek, L. E., van der Straten Waillet, P., Másdóttir, T., &amp; Volhardt, M. D. S. (2025).
+</strong>
+
+Methods of diagnosing speech sound disorders in multilingual children.
+
+<em>
+Language, Speech, and Hearing Services in Schools, 56
+</em>
+(3), 469–487.
+
+<br>
+
+<a href="https://doi.org/10.1044/2025_LSHSS-24-00099"
+target="_blank"
+rel="noopener">
+
+https://doi.org/10.1044/2025_LSHSS-24-00099
+
+</a>
+
+</div>
+
+
+<div class="reference">
+
+<strong>
+Speech-Language &amp; Audiology Canada.
+</strong>
+
+<em>
+Childhood Language Disorder Resource Page.
+</em>
+
+<br>
+
+<a href="https://www.sac-oac.ca/wp-content/uploads/2023/02/sac_childhood_language_disorder_resource_page_en.pdf"
+target="_blank"
+rel="noopener">
+
+SAC Childhood Language Disorder Resource
+
+</a>
+
+</div>
+
+
+<div class="reference">
+
+<strong>
+Speech-Language &amp; Audiology Canada.
+</strong>
+
+<em>
+Speech-Language Pathologists in Schools.
+</em>
+
+<br>
+
+<a href="https://www.sac-oac.ca/practice-resources/toolkits/speech-language-pathologists-in-schools/"
+target="_blank"
+rel="noopener">
+
+SAC School-Based Toolkit
+
+</a>
+
+</div>
+
+
+<div class="reference">
+
+<strong>
+New Brunswick Association of Speech-Language Pathologists and Audiologists.
+</strong>
+
+<em>
+Access to Audiology and Speech-Language Pathology Services in New Brunswick – School-age Children.
+</em>
+
+<br>
+
+<a href="https://nbaslpa.ca/wp-content/uploads/2021/04/Access-to-Audio-and-SLP-Services-in-NB.pdf"
+target="_blank"
+rel="noopener">
+
+NBASLPA – Access to Services in New Brunswick
+
+</a>
+
+</div>
+
+
+<div class="reference">
+
+<strong>
+Speech-Language &amp; Audiology Canada. (2021).
+</strong>
+
+Evidence-based speech-language pathology practice in schools.
+
+<br>
+
+<a href="https://www.sac-oac.ca/new-sac-official-statement-evidence-based-speech-language-pathology-practice/"
+target="_blank"
+rel="noopener">
+
+SAC – Evidence-Based Practice in Schools
+
+</a>
+
+</div>
+
+
+<div class="reference">
+
+<strong>
+University of Toronto, Temerty Faculty of Medicine. (2026).
+</strong>
+
+<em>
+U of T researchers call for new approach to speech sound disorders in children.
+</em>
+
+<br>
+
+<a href="https://temertymedicine.utoronto.ca/news/u-t-researchers-call-new-approach-speech-sound-disorders-children"
+target="_blank"
+rel="noopener">
+
+University of Toronto – Speech Sound Disorders
+
+</a>
+
+</div>
+
+
+<div class="note">
+
+<strong>Prevalence note:</strong>
+A recent national Canadian prevalence estimate specifically for lisping was not identified in the sources reviewed.
+For this reason, this site does not present a specific percentage for lisping.
+
+</div>
+
+</section>
+
+
 
 <footer>
-<h2>Supporting Every Student</h2>
-<p>Created by Houda Abassi • Educational Support Program, NBCC</p>
-<p class="small">The information on this site should be reviewed against current, authoritative sources before being used for individual educational or clinical decisions.</p>
+
+<h3>
+Supporting Every Student
+</h3>
+
+<p>
+An educational project focused on respectful, inclusive support for students with speech and language differences.
+</p>
+
+<p class="footer-small">
+Created by Houda • Educational Support Program, NBCC • 2026
+</p>
+
 </footer>
+
 </body>
 </html>
+```

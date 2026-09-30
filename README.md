@@ -1,2 +1,2 @@
 # houdaabassi4.github.io
-Supporting Every Student – Dyslexia &amp; Mutism Educational Resources
+Supporting Every Student – DLD; Speech Sound Disorder (SSD) – Lisping
